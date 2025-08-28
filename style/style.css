@@ -12,3 +12,29 @@
 .roboto-font {
   font-family: "Roboto", sans-serif;
 }
+
+/* responsive mobile view */
+@media screen and (max-width: 768px) {
+  .nav-bar,
+  .parent-container{
+    flex-direction: column;
+  }
+  .nav-left-side,
+  .nav-right-side{
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .Card-section{
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .History-section{
+    width: 100%;
+    padding: 10px;
+  }
+}
